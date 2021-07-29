@@ -3,5 +3,5 @@
     <string name="url_test_activity">UrlTestActivity</string>
     <string name="edit_text_test_activity">EditTextTestActivity</string>
 
-    <string name="url_test_text_view">ここが<a href="https://www.youtube.com/">URL</a>だよ！</string>
+    <string name="url_test_text_view">ここが&lt;a href="https://www.youtube.com/"&gt;URL&lt;/a&gt;だよ！</string>
 </resources>
