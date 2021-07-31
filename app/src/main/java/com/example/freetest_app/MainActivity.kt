@@ -11,13 +11,13 @@ import kotlinx.android.synthetic.main.activity_url_test.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val urlTestActivityButton = findViewById<Button>(R.id.url_test_activity_button)
-    private val editTextTestActivityButton = findViewById<Button>(R.id.edit_text_test_activity_button)
-    private val recyclerviewTestActivityButton = findViewById<Button>(R.id.recyclerview_test_activity_button)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val urlTestActivityButton = findViewById<Button>(R.id.url_test_activity_button)
+        val editTextTestActivityButton = findViewById<Button>(R.id.edit_text_test_activity_button)
+        val recyclerviewTestActivityButton = findViewById<Button>(R.id.recyclerview_test_activity_button)
 
         urlTestActivityButton.setOnClickListener {
             val intent = Intent(this, UrlTestActivity::class.java)

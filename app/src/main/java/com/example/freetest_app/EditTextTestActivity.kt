@@ -9,15 +9,15 @@ import androidx.core.widget.addTextChangedListener
 
 class EditTextTestActivity : AppCompatActivity() {
 
-    private val editText = findViewById<EditText>(R.id.edit_text)
-    private val textView = findViewById<TextView>(R.id.text_view)
-    private val button = findViewById<Button>(R.id.button)
-    private val editText2 = findViewById<EditText>(R.id.edit_text2)
-    private val textView2 = findViewById<TextView>(R.id.text_view2)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_text_test)
+
+        val editText = findViewById<EditText>(R.id.edit_text)
+        val textView = findViewById<TextView>(R.id.text_view)
+        val button = findViewById<Button>(R.id.button)
+        val editText2 = findViewById<EditText>(R.id.edit_text2)
+        val textView2 = findViewById<TextView>(R.id.text_view2)
 
         button.setOnClickListener {
             textView.text = editText.text.toString()
