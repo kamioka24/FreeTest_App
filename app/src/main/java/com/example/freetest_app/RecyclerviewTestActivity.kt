@@ -25,7 +25,7 @@ class RecyclerviewTestActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         val textList = mutableListOf<String>()
-        for (i in 0..100) {
+        for (i in 1..300) {
             textList.add("要素$i")
         }
 
