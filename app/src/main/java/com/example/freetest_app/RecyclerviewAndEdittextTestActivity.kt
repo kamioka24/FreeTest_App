@@ -24,7 +24,7 @@ class RecyclerviewAndEdittextTestActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this) // 上から下に並べる
         recyclerView.adapter = adapter
 
-        val textList2 = mutableListOf<String>()
+        val newList = adapter.textList2.toMutableList()
 
         val editText = findViewById<EditText>(R.id.editText)
         val button = findViewById<Button>(R.id.button)
@@ -39,11 +39,11 @@ class RecyclerviewAndEdittextTestActivity : AppCompatActivity() {
             } else {
 
                 // リストに追加して EditText 内の文字をクリアする
-                textList2.add(text)
+                newList.add(text)
                 editText.setText("")
 
                 // 上の textList を下の textList に入れる
-                adapter.textList2 = textList2
+                adapter.textList2 = newList
 
                 // adapter の中身を変えたときに必ずこれを呼ぶ(必須)
                 // 呼ばれないと中身の変更が反映されない
@@ -52,7 +52,7 @@ class RecyclerviewAndEdittextTestActivity : AppCompatActivity() {
         }
 
         clearButton.setOnClickListener {
-            textList2.clear()
+            newList.clear()
             editText.setText("")
         }
     }
