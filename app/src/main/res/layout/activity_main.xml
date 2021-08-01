@@ -30,10 +30,20 @@
         android:id="@+id/recyclerview_test_activity_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/edit_text_test_activity"
+        android:text="@string/recyclerview_test_activity"
         android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_test_activity_button" />
+
+    <Button
+        android:id="@+id/recyclerview_and_edittext_test_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recyclerview_and_edittext_test_activity"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview_test_activity_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

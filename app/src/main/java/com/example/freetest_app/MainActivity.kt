@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val urlTestActivityButton = findViewById<Button>(R.id.url_test_activity_button)
         val editTextTestActivityButton = findViewById<Button>(R.id.edit_text_test_activity_button)
         val recyclerviewTestActivityButton = findViewById<Button>(R.id.recyclerview_test_activity_button)
+        val recyclerviewAndEdittextTestActivityButton = findViewById<Button>(R.id.recyclerview_and_edittext_test_activity_button)
 
         urlTestActivityButton.setOnClickListener {
             val intent = Intent(this, UrlTestActivity::class.java)
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         recyclerviewTestActivityButton.setOnClickListener {
             val intent = Intent(this, RecyclerviewTestActivity::class.java)
+            startActivity(intent)
+        }
+
+        recyclerviewAndEdittextTestActivityButton.setOnClickListener {
+            val intent = Intent(this, RecyclerviewAndEdittextTestActivity::class.java)
             startActivity(intent)
         }
     }
