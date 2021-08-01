@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerviewTestActivityButton = findViewById<Button>(R.id.recyclerview_test_activity_button)
         val recyclerviewAndEdittextTestActivityButton = findViewById<Button>(R.id.recyclerview_and_edittext_test_activity_button)
         val asyncTaskActivityButton = findViewById<Button>(R.id.async_task_activity_button)
+        val coroutineActivityButton = findViewById<Button>(R.id.coroutine_activity_button)
 
         urlTestActivityButton.setOnClickListener {
             val intent = Intent(this, UrlActivity::class.java)
@@ -39,6 +40,11 @@ class MainActivity : AppCompatActivity() {
 
         asyncTaskActivityButton.setOnClickListener {
             val intent = Intent(this, AsyncTaskActivity::class.java)
+            startActivity(intent)
+        }
+
+        coroutineActivityButton.setOnClickListener {
+            val intent = Intent(this, CoroutineActivity::class.java)
             startActivity(intent)
         }
     }
