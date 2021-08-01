@@ -4,18 +4,16 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import java.util.zip.Inflater
 
-class RecyclerviewTestActivity : AppCompatActivity() {
+class RecyclerviewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recyclerview_test)
+        setContentView(R.layout.activity_recyclerview)
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = MyAdapter()

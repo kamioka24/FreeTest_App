@@ -7,11 +7,11 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.core.widget.addTextChangedListener
 
-class EditTextTestActivity : AppCompatActivity() {
+class EditTextActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_text_test)
+        setContentView(R.layout.activity_edit_text)
 
         val editText = findViewById<EditText>(R.id.edit_text)
         val textView = findViewById<TextView>(R.id.text_view)

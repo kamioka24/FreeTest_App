@@ -12,10 +12,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerviewAndEdittextTestActivity : AppCompatActivity() {
+class RecyclerviewAndEdittextActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recyclerview_and_edittext_test)
+        setContentView(R.layout.activity_recyclerview_and_edittext)
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = MyAdapter()
@@ -64,7 +64,7 @@ class RecyclerviewAndEdittextTestActivity : AppCompatActivity() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
             val inflater = LayoutInflater.from(parent.context)
             val view = inflater.inflate(R.layout.list_item, parent, false)
-            return RecyclerviewAndEdittextTestActivity.MyViewHolder(view)
+            return RecyclerviewAndEdittextActivity.MyViewHolder(view)
         }
 
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {

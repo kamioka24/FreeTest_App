@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FreeTest_App">
-        <activity android:name=".RecyclerviewAndEdittextTestActivity"></activity>
-        <activity android:name=".RecyclerviewTestActivity" />
+        <activity android:name=".AsyncTaskActivity"></activity>
+        <activity android:name=".RecyclerviewAndEdittextActivity" />
+        <activity android:name=".RecyclerviewActivity" />
         <activity android:name=".RecyclerviewTest" />
-        <activity android:name=".EditTextTestActivity" />
-        <activity android:name=".UrlTestActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".UrlActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

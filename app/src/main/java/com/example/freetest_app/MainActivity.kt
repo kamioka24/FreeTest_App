@@ -4,10 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.recyclerview.widget.RecyclerView
-import com.example.freetest_app.R.id.url_test_activity_button
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_url_test.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,22 +17,22 @@ class MainActivity : AppCompatActivity() {
         val recyclerviewAndEdittextTestActivityButton = findViewById<Button>(R.id.recyclerview_and_edittext_test_activity_button)
 
         urlTestActivityButton.setOnClickListener {
-            val intent = Intent(this, UrlTestActivity::class.java)
+            val intent = Intent(this, UrlActivity::class.java)
             startActivity(intent)
         }
 
         editTextTestActivityButton.setOnClickListener {
-            val intent = Intent(this, EditTextTestActivity::class.java)
+            val intent = Intent(this, EditTextActivity::class.java)
             startActivity(intent)
         }
 
         recyclerviewTestActivityButton.setOnClickListener {
-            val intent = Intent(this, RecyclerviewTestActivity::class.java)
+            val intent = Intent(this, RecyclerviewActivity::class.java)
             startActivity(intent)
         }
 
         recyclerviewAndEdittextTestActivityButton.setOnClickListener {
-            val intent = Intent(this, RecyclerviewAndEdittextTestActivity::class.java)
+            val intent = Intent(this, RecyclerviewAndEdittextActivity::class.java)
             startActivity(intent)
         }
     }

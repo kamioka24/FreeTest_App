@@ -6,11 +6,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
 
-class UrlTestActivity : AppCompatActivity() {
+class UrlActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_url_test)
+        setContentView(R.layout.activity_url)
 
         val urlTestTextView = findViewById<TextView>(R.id.urlTestTextView)
 
